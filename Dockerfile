@@ -1,4 +1,4 @@
-# Builder image (public, non-secret - published to luketn/local-docker-mongo-runner) adding Docker to the latest Mongo image (for Docker-in-Docker run)
+# Builder image (published to luketn/mongo-docker-in-docker) adding Docker to the latest Mongo image (for Docker-in-Docker run)
 FROM mongo
 
 RUN apt-get update && apt-get install -y wget tar

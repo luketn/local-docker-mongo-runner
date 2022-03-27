@@ -1,7 +1,7 @@
 # Builder image (published to luketn/mongo-docker-in-docker) adding Docker to the latest Mongo image (for Docker-in-Docker run)
 FROM mongo
 
-RUN apt-get update && apt-get install -y wget tar zip unzip
+RUN apt-get update && apt-get install -y wget tar zip unzip nano
 
 RUN set -eux; \
 	arch="$(dpkg --print-architecture)" && \
